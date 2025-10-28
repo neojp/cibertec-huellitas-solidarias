@@ -2,6 +2,10 @@ body {
     color: #68717A;
 }
 
+h1, h2, h3 {
+    color: #343A40;
+}
+
 .py-6 {
     padding-bottom: 64px;
     padding-top: 64px;
@@ -23,6 +27,14 @@ body {
     color: #6C757D;
 }
 
+.site-nav a:hover {
+    color: #7f95a7ff;
+}
+
+.site-nav a.active {
+    color: #6f42c1;
+}
+
 footer {
     border-top: 1px solid #eee;
 }
@@ -38,4 +50,22 @@ footer {
 
 .btn-whatsapp svg {
     margin-right: 8px;
+}
+
+.hero {
+    color: #6C757D;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-weight: bold;
+}
+
+.media-content-container {
+    max-width: 1024px;
+    margin: 0 auto;
 }
