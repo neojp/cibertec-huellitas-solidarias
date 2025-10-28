@@ -1,0 +1,41 @@
+body {
+    color: #68717A;
+}
+
+.py-6 {
+    padding-bottom: 64px;
+    padding-top: 64px;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #343A40;
+}
+
+.site-nav {
+    background-color: #E9ECEF;
+    color: #6C757D;
+}
+
+.site-nav a {
+    color: #6C757D;
+}
+
+footer {
+    border-top: 1px solid #eee;
+}
+
+.btn-whatsapp {
+    background-color: #E9ECEF;
+    border-color: #E9ECEF;
+    color: #343A40;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 22px;
+}
+
+.btn-whatsapp svg {
+    margin-right: 8px;
+}
