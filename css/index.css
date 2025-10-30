@@ -1,0 +1,90 @@
+.panel-guardianes {
+  width: 80vw;              /* ocupa 80% del ancho de la pantalla */
+  max-width: 1100px;        /* evita que crezca demasiado en pantallas enormes */
+  margin: 2rem auto;        /* centrado horizontal y separación vertical */
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  background: #ffffff;
+  padding: 1.25rem;
+}
+
+.panel-guardianes .img-left {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;        /* recorta manteniendo proporción */
+  border-radius: 10px;
+  flex-shrink: 0;           /* evita que la imagen se reduzca excesivamente */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 767.98px) {
+  .panel-guardianes {
+    width: 94vw;            /* mejor margen en móviles */
+  }
+  .panel-guardianes .img-left {
+    width: 220px;
+    height: 220px;
+  }
+}
+.panel-guardianes .img-left {
+  flex: 0 0 40%;      /* no crece, no se encoge, ocupa 40% */
+  max-width: 520px;   /* tope máximo */
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+@media (max-width: 767.98px) {
+  .panel-guardianes .img-left {
+    flex: 0 0 100%;   /* en móviles la imagen ocupa toda la fila */
+    width: 100%;
+    max-width: none;
+  }
+}
+/* Justificar párrafos del panel */
+.panel-guardianes .text-start p {
+  text-align: justify;           /* justifica el texto */
+  text-justify: inter-word;      /* mejora el espaciado en navegadores que lo soportan */
+  -webkit-hyphens: auto;         /* guionización automática para WebKit */
+  -ms-hyphens: auto;             /* para navegadores antiguos*/
+  -moz-hyphens: auto;            /* para Firefox */
+  hyphens: auto;                 /* estándar */
+  text-align-last: left;         /* última línea alineada a la izquierda (opcional) */
+}
+
+/* Panel centrado que ocupa 60% del viewport */
+.panel-60 {
+  width: 60vw;                    /* 60% del ancho de pantalla */
+  max-width: 1100px;              /* tope para pantallas muy grandes */
+  margin: 3rem auto;              /* centra y deja espacio vertical */
+  padding: 2rem 2.25rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenido interno centrado */
+.panel-60 .panel-inner {
+  text-align: center;
+  max-width: 900px;               /* controla la lectura */
+}
+
+/* Título */
+.panel-60 h2 {
+  font-size: clamp(1.6rem, 2.4vw, 2.25rem);
+  margin: 0 0 1rem;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+/* Párrafo */
+.panel-60 p {
+  margin: 0 0 1.25rem;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}

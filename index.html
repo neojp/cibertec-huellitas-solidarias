@@ -23,9 +23,13 @@
     <div class="container">
       <ul class="nav justify-content-center">
         <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-        <li class="nav-item"><a class="nav-link" href="adopcion.html">Proceso de adopción</a></li>
-        <li class="nav-item"><a class="nav-link" href="adopcion.html">Catálogo de adopción</a></li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="nosotros.html">Nosotros</a>
+            <ul class="dropdown-menu">
+                <li class="dropdown-item"><a class="nav-link" href="adopcion.html">Proceso de adopción</a></li>
+            </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo de adopción</a></li>
         <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
       </ul>
@@ -33,15 +37,84 @@
   </nav>
 
   <main class="site-main">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-            <div class="py-5">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, provident eum, officia iusto vel voluptate earum sed exercitationem molestiae, expedita nostrum voluptatum. Nihil veritatis numquam totam veniam, velit architecto consectetur.</p>
+    <section class="hero border-bottom">
+        <div class="hero-content py-5 mx-auto">
+            <h1>Son parte de tu familia trátalos como tales</h1>
+            <p class="my-4 lead">La defensa de los animales es una causa que involucra justicia, compasión y respeto.
+                Con responsabilidad, seguiremos defendiendo los derechos animales, dando así voz a
+                aquellos que todavía no la tienen en nuestra sociedad</p>
+            <a href="adopcion.html" class="btn btn-outline-secondary">¡Adopta!</a>
+        </div>
+    </section>
+
+    <section class="col d-flex flex-wrap gap-5 justify-content-center py-5">
+        <div class="card">
+            <a href="adopcion.html"><img src="img/harry.png" class="card-img-top" alt=""></a>
+            <div class="card-body">
+                <h5 class="card-title">Harry</h5>
+                <p class="card-text">2 meses</p>
+                <a href="adopcion.html" class="btn btn-outline-secondary">Lo quiero</a>
             </div>
         </div>
-      </div>
+
+        <div class="card">
+            <a href="adopcion.html"><img src="img/mary-jane.jpg" class="card-img-top" alt=""></a>
+            <div class="card-body">
+                <h5 class="card-title">Mary Jane</h5>
+                <p class="card-text">2 meses</p>
+                <a href="adopcion.html" class="btn btn-outline-secondary">Lo quiero</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <a href="adopcion.html"><img src="img/wasabi.jpg" class="card-img-top" alt=""></a>
+            <div class="card-body">
+                <h5 class="card-title">Wasabi</h5>
+                <p class="card-text">3 meses</p>
+                <a href="adopcion.html" class="btn btn-outline-secondary">Lo quiero</a>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="panel-guardianes d-flex flex-column flex-md-row align-items-center justify-content-center gap-4">
+        <img
+        src="img/Equipo.avif"
+        alt="Grupo de jóvenes rescatistas y cuidadores de animales, alegres"
+        class="img-left"
+        loading="lazy">
+
+        <!-- Texto a la derecha -->
+        <div class="text-start">
+        <h3 class="mb-2">Guardianes con corazón: el equipo que transforma vidas peludas 💚</h3>
+        <p class="mb-0">
+            Son jóvenes, apasionados y con una misión clara: proteger a los animales que no tienen voz. Este grupo no solo rescata, cuida y rehabilita a perros y gatos en situación vulnerable, sino que también les busca un hogar donde puedan ser amados como merecen.
+        </p>
+        <p class="mt-2 mb-0">
+            Cada uno aporta lo mejor de sí: desde el cuidado diario hasta campañas de adopción y educación sobre tenencia responsable.
+        </p>
+        <p class="mt-2 fw-semibold">¿Su lema? “Rescatamos con amor, conectamos con propósito.” 💚</p>
+        </div>
     </div>
+
+    <div class="pt-5"></div>
+
+    <section class="panel-60" aria-labelledby="panel-title">
+        <div class="panel-inner">
+            <h2 id="panel-title">Conócelos, ámalos, transfórmate 💚</h2>
+
+            <p>
+            Cada mascota tiene una historia que merece ser escuchada.
+            Detrás de cada mirada tierna hay un pasado, detrás de cada ladrido o ronroneo hay una personalidad única esperando ser descubierta.
+            Estos animales no son solo mascotas: son compañeros leales, terapeutas silenciosos, y maestros de amor incondicional.
+            Nuestro equipo se encarga de cuidar, rehabilitar y preparar a cada uno para encontrar el hogar que merecen.
+            Aquí puedes conocer sus historias, sus gustos, sus miedos y sus momentos favoritos.
+            Porque adoptar no es solo llevarte un animal a casa… es abrir tu corazón a una nueva aventura.
+            </p>
+
+            <a class="btn btn-outline-secondary" href="detalle.html" aria-label="Conocer a las mascotas">Conócelos</a>
+        </div>
+    </section>  
   </main>
 
   <footer class="site-footer py-5 text-center text-md-start">
