@@ -2,8 +2,10 @@
     max-width: 1150px;
 }
 
-.catalog-items .card {
-    width: 350px;
+@media screen and (min-width: 768px) {
+    .catalog-items .card {
+        width: 350px;
+    }
 }
 
 .catalog-items .card img {
@@ -11,13 +13,13 @@
     object-fit: cover;
 }
 
-.catalog-items aside {
+/* .catalog-items aside {
     width: 320px;
 }
 
 .catalog-items section {
     width: 764px;
-}
+} */
 
 .catalog-items aside .accordion-button {
     background-color: #fff;

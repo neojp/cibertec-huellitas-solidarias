@@ -1,0 +1,16 @@
+.media-content-container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.media-content-content {
+    flex-grow: 1;
+}
+
+.media-content img {
+    border-radius: 12px;
+}
+
+.media-content textarea {
+    height: 120px;
+}

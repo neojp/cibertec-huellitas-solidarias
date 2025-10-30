@@ -35,6 +35,10 @@ h1, h2, h3 {
     color: #6f42c1;
 }
 
+.site-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 footer {
     border-top: 1px solid #eee;
 }
@@ -63,9 +67,4 @@ footer {
 
 .hero h1 {
     font-weight: bold;
-}
-
-.media-content-container {
-    max-width: 1024px;
-    margin: 0 auto;
 }

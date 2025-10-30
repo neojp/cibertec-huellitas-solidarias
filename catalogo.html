@@ -42,146 +42,148 @@
     </section>
 
     <div id="catalog" class="catalog-items">
-        <div class="container py-5 d-flex gap-5">
-            <aside class="catalog-filters">
-                <h2 class="h4">Filtros</h2>
-                <div class="accordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Especie
-                        </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li><button class="filter-species-all-button" onclick="filterAllSpecies()">Todos</button></li>
-                                <li><button class="filter-species-cat-button" onclick="filterCat()">Gatos</button></li>
-                                <li><button class="filter-species-dog-button" onclick="filterDog()">Perros</button></li>
-                                <li><button class="filter-species-other-button" onclick="filterOther()">Otros</button></li>
-                            </ul>
+        <div class="container py-5">
+            <div class="row">
+                <aside class="col-md-3 catalog-filters">
+                    <h2 class="h4">Filtros</h2>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Especie
+                            </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li><button class="filter-species-all-button" onclick="filterAllSpecies()">Todos</button></li>
+                                    <li><button class="filter-species-cat-button" onclick="filterCat()">Gatos</button></li>
+                                    <li><button class="filter-species-dog-button" onclick="filterDog()">Perros</button></li>
+                                    <li><button class="filter-species-other-button" onclick="filterOther()">Otros</button></li>
+                                </ul>
+                            </div>
+                            </div>
                         </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Edad
+                            </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li><button class="filter-age-all-button" onclick="filterAllAge()">Todos</button></li>
+                                    <li><button class="filter-age-2months-button" onclick="filter2Months()">2 meses</button></li>
+                                    <li><button class="filter-age-3months-button" onclick="filter3Months()">3 meses</button></li>
+                                    <li><button class="filter-age-15months-button" onclick="filter15Months()">15 meses</button></li>
+                                    <li><button class="filter-age-18months-button" onclick="filter18Months()">18 meses</button></li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Sexo
+                            </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li><button class="filter-sex-all-button" onclick="filterAllSex()">Todos</button></li>
+                                    <li><button class="filter-sex-male-button" onclick="filterMale()">Macho</button></li>
+                                    <li><button class="filter-sex-female-button" onclick="filterFemale()">Hembra</button></li>
+                                </ul>
+                            </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Edad
-                        </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li><button class="filter-age-all-button" onclick="filterAllAge()">Todos</button></li>
-                                <li><button class="filter-age-2months-button" onclick="filter2Months()">2 meses</button></li>
-                                <li><button class="filter-age-3months-button" onclick="filter3Months()">3 meses</button></li>
-                                <li><button class="filter-age-15months-button" onclick="filter15Months()">15 meses</button></li>
-                                <li><button class="filter-age-18months-button" onclick="filter18Months()">18 meses</button></li>
-                            </ul>
-                        </div>
+                </aside>
+                <section class="col d-flex flex-wrap gap-5 justify-content-center align-items-start">
+                    <div class="card age-2months species-cat sex-male">
+                        <a href="adopcion.html"><img src="img/harry.png" class="card-img-top" alt=""></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Harry</h5>
+                            <p class="card-text">2 meses</p>
+                            <a href="adopcion.html" class="btn btn-outline-secondary">Lo quiero</a>
                         </div>
                     </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Sexo
-                        </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li><button class="filter-sex-all-button" onclick="filterAllSex()">Todos</button></li>
-                                <li><button class="filter-sex-male-button" onclick="filterMale()">Macho</button></li>
-                                <li><button class="filter-sex-female-button" onclick="filterFemale()">Hembra</button></li>
-                            </ul>
-                        </div>
+
+                    <div class="card age-2months species-cat sex-female">
+                        <a href="adopcion.html"><img src="img/mary-jane.jpg" class="card-img-top" alt=""></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Mary Jane</h5>
+                            <p class="card-text">2 meses</p>
+                            <a href="adopcion.html" class="btn btn-outline-secondary">Lo quiero</a>
                         </div>
                     </div>
-                </div>
-            </aside>
-            <section class="d-flex flex-wrap gap-5 justify-content-center align-items-start">
-                <div class="card age-2months species-cat sex-male">
-                    <a href="adopcion.html"><img src="img/harry.png" class="card-img-top" alt=""></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Harry</h5>
-                        <p class="card-text">2 meses</p>
-                        <a href="adopcion.html" class="btn btn-outline-secondary">Lo quiero</a>
-                    </div>
-                </div>
 
-                <div class="card age-2months species-cat sex-female">
-                    <a href="adopcion.html"><img src="img/mary-jane.jpg" class="card-img-top" alt=""></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Mary Jane</h5>
-                        <p class="card-text">2 meses</p>
-                        <a href="adopcion.html" class="btn btn-outline-secondary">Lo quiero</a>
+                    <div class="card age-3months species-cat sex-male">
+                        <a href="adopcion.html"><img src="img/wasabi.jpg" class="card-img-top" alt=""></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Wasabi</h5>
+                            <p class="card-text">3 meses</p>
+                            <a href="adopcion.html" class="btn btn-outline-secondary">Lo quiero</a>
+                        </div>
                     </div>
-                </div>
+                    
+                    <div class="card age-15months species-cat sex-female">
+                        <a href="adopcion.html"><img src="img/gaia.jpg" class="card-img-top" alt=""></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Gaia</h5>
+                            <p class="card-text">15 meses</p>
+                            <a href="adopcion.html" class="btn btn-outline-secondary">Lo quiero</a>
+                        </div>
+                    </div>
 
-                <div class="card age-3months species-cat sex-male">
-                    <a href="adopcion.html"><img src="img/wasabi.jpg" class="card-img-top" alt=""></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Wasabi</h5>
-                        <p class="card-text">3 meses</p>
-                        <a href="adopcion.html" class="btn btn-outline-secondary">Lo quiero</a>
+                    <div class="card age-18months species-other sex-female">
+                        <a href="adopcion.html"><img src="img/merlina.jpg" class="card-img-top" alt=""></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Merlina</h5>
+                            <p class="card-text">18 meses</p>
+                            <a href="adopcion.html" class="btn btn-outline-secondary">Lo quiero</a>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="card age-15months species-cat sex-female">
-                    <a href="adopcion.html"><img src="img/gaia.jpg" class="card-img-top" alt=""></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Gaia</h5>
-                        <p class="card-text">15 meses</p>
-                        <a href="adopcion.html" class="btn btn-outline-secondary">Lo quiero</a>
-                    </div>
-                </div>
 
-                <div class="card age-18months species-other sex-female">
-                    <a href="adopcion.html"><img src="img/merlina.jpg" class="card-img-top" alt=""></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Merlina</h5>
-                        <p class="card-text">18 meses</p>
-                        <a href="adopcion.html" class="btn btn-outline-secondary">Lo quiero</a>
+                    <div class="card age-2months species-dog sex-female">
+                        <a href="adopcion.html"><img src="img/bianca.png" class="card-img-top" alt=""></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Bianca</h5>
+                            <p class="card-text">2 meses</p>
+                            <a href="adopcion.html" class="btn btn-outline-secondary">Lo quiero</a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card age-2months species-dog sex-female">
-                    <a href="adopcion.html"><img src="img/bianca.png" class="card-img-top" alt=""></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Bianca</h5>
-                        <p class="card-text">2 meses</p>
-                        <a href="adopcion.html" class="btn btn-outline-secondary">Lo quiero</a>
+                    <div class="card age-3months species-cat sex-male">
+                        <a href="adopcion.html"><img src="img/tommy.jpg" class="card-img-top" alt=""></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Tommy</h5>
+                            <p class="card-text">3 meses</p>
+                            <a href="adopcion.html" class="btn btn-outline-secondary">Lo quiero</a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card age-3months species-cat sex-male">
-                    <a href="adopcion.html"><img src="img/tommy.jpg" class="card-img-top" alt=""></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Tommy</h5>
-                        <p class="card-text">3 meses</p>
-                        <a href="adopcion.html" class="btn btn-outline-secondary">Lo quiero</a>
+                    <div class="card age-2months species-dog sex-male">
+                        <a href="adopcion.html"><img src="img/ringo.jpg" class="card-img-top" alt=""></a>
+                        <div class="card-body">
+                            <h5 class="card-title">Ringo</h5>
+                            <p class="card-text">2 meses</p>
+                            <a href="adopcion.html" class="btn btn-outline-secondary">Lo quiero</a>
+                        </div>
                     </div>
-                </div>
-
-                <div class="card age-2months species-dog sex-male">
-                    <a href="adopcion.html"><img src="img/ringo.jpg" class="card-img-top" alt=""></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Ringo</h5>
-                        <p class="card-text">2 meses</p>
-                        <a href="adopcion.html" class="btn btn-outline-secondary">Lo quiero</a>
-                    </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
     </div>
   </main>
 
-  <footer class="site-footer py-5">
+  <footer class="site-footer py-5 text-center text-md-start">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-6">
+        <div class="col-md-6">
             <h2 class="fs-6 fw-semibold">Visítanos en nuestras redes</h2>
-            <div class="social-icons mt-2 d-flex gap-3">
+            <div class="social-icons mt-2 d-flex gap-3 justify-content-center justify-content-md-start">
                 <!-- Instagram -->
                 <a href="https://www.instagram.com/" aria-label="Instagram" class="text-decoration-none" title="Instagram">
                     <img src="img/instagram.svg" alt="">
@@ -196,7 +198,7 @@
                 </a>
             </div>
         </div>
-        <div class="col-6 d-flex justify-content-end">
+        <div class="mt-5 mt-md-0 col-md-6 d-md-flex justify-content-end">
             <a href="https://api.whatsapp.com/send/?phone=51912340000&text=Hola+estoy+interesado+en+adoptar+una+mascota&type=phone_number&app_absent=0" class="btn btn-secondary btn-whatsapp">
                 <img src="img/whatsapp.svg" alt="">
                 Contáctanos por WhatsApp

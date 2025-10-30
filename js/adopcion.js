@@ -70,3 +70,50 @@ document.addEventListener('DOMContentLoaded', () => {
         alert(`Has seleccionado: ${prov} - ${city}`);
     });
 });
+
+function validate() {
+    if (document.getElementById('nombre-mascota').value.trim() === '') {
+        alert('El nombre del animal es requerido');
+        return false;
+    }
+
+    if (document.getElementById('nombre').value.trim() === '') {
+        alert('Su nombre es requerido');
+        return false;
+    }
+
+    if (document.getElementById('apellido').value.trim() === '') {
+        alert('Sus apellidos son requeridos');
+        return false;
+    }
+
+    if (document.getElementById('dni').value.trim() === '') {
+        alert('Su DNI es requerido');
+        return false;
+    }
+
+    if (document.getElementById('nacimiento').value.trim() === '') {
+        alert('Su año de nacimiento es requerido');
+        return false;
+    }
+
+    if (document.getElementById('direccion').value.trim() === '') {
+        alert('Su direccion es requerida');
+        return false;
+    }
+
+    if (document.getElementById('telefono').value.trim() === '') {
+        alert('Su número de teléfono es requerido');
+        return false;
+    }
+
+    if (document.getElementById('email').value.trim() === '') {
+        alert('Su correo electronico es requerida');
+        return false;
+    }
+
+    if (document.getElementById('terminos').checked === false) {
+        alert('Acepte los términos y condiciones');
+        return false;
+    }
+}
