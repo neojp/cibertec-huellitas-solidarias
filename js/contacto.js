@@ -14,8 +14,8 @@ function validate() {
         return false;
     }
 
-    if (document.getElementById('terminos').checked === false) {
-        alert('Acepte los términos y condiciones');
+    if (document.getElementById('mensaje').value.trim() === '') {
+        alert('Su mensaje es requerido');
         return false;
     }
 }
