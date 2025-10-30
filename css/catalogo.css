@@ -1,0 +1,102 @@
+.catalog-items .container {
+    max-width: 1150px;
+}
+
+.catalog-items .card {
+    width: 350px;
+}
+
+.catalog-items .card img {
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+}
+
+.catalog-items aside {
+    width: 320px;
+}
+
+.catalog-items section {
+    width: 764px;
+}
+
+.catalog-items aside .accordion-button {
+    background-color: #fff;
+}
+
+.catalog-items h2 {
+    color: #343A40;
+}
+
+.catalog-filters ul {
+    list-style: none;
+    padding: 0;
+}
+
+.catalog-filters button {
+    background-color: #fff;
+    border: 0;
+    color: #6C757D;
+}
+
+.filter-species-all-button,
+.filter-age-all-button,
+.filter-sex-all-button {
+    font-weight: bold;
+}
+
+
+#catalog.filter-species-cat .filter-species-all-button,
+#catalog.filter-species-dog .filter-species-all-button,
+#catalog.filter-species-other .filter-species-all-button,
+
+#catalog.filter-age-2months .filter-age-all-button,
+#catalog.filter-age-3months .filter-age-all-button,
+#catalog.filter-age-15months .filter-age-all-button,
+#catalog.filter-age-18months .filter-age-all-button,
+
+#catalog.filter-sex-male .filter-sex-all-button,
+#catalog.filter-sex-female .filter-sex-all-button {
+    font-weight: normal;
+}
+
+#catalog.filter-species-cat .filter-species-cat-button,
+#catalog.filter-species-dog .filter-species-dog-button,
+#catalog.filter-species-other .filter-species-other-button,
+
+#catalog.filter-age-2months .filter-age-2months-button,
+#catalog.filter-age-3months .filter-age-3months-button,
+#catalog.filter-age-15months .filter-age-15months-button,
+#catalog.filter-age-18months .filter-age-18months-button,
+
+#catalog.filter-sex-male .filter-sex-male-button,
+#catalog.filter-sex-female .filter-sex-female-button {
+    font-weight: bold;
+}
+
+#catalog.filter-species-cat .card,
+#catalog.filter-species-dog .card,
+#catalog.filter-species-other .card,
+
+#catalog.filter-age-2months .card,
+#catalog.filter-age-3months .card,
+#catalog.filter-age-15months .card,
+#catalog.filter-age-18months .card,
+
+#catalog.filter-sex-male .card,
+#catalog.filter-sex-female .card {
+    display: none;
+}
+
+#catalog.filter-species-cat .card.species-cat,
+#catalog.filter-species-dog .card.species-dog,
+#catalog.filter-species-other .card.species-other,
+
+#catalog.filter-age-2months .card.age-2months,
+#catalog.filter-age-3months .card.age-3months,
+#catalog.filter-age-15months .card.age-15months,
+#catalog.filter-age-18months .card.age-18months,
+
+#catalog.filter-sex-male .card.sex-male,
+#catalog.filter-sex-female .card.sex-female {
+    display: block;
+}

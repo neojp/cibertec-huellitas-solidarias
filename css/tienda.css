@@ -1,5 +1,12 @@
-.store-items {
-    .container {
-        max-width: 1180px;
-    }
+.store-items .container {
+    max-width: 1180px;
+}
+
+.card {
+    width: 350px;
+}
+
+.card img {
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
 }
